@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<title>NotepadWeb</title>
+<meta charset="utf-8">
+<html lang="pl">
+    <div id="textcolor">
+        <button id="reds" onclick="red()"></button>
+        <button id="greens" onclick="green()"></button>
+        <button id="oranges" onclick="orange()"></button>
+        <button id="dark" onclick="black()"></button>
+        <p id="info"></p>
+    </div>
+    <p></p>
+    <div id="mydiv">
+    <div id="backgroundcolor">
+    <button id="reds2" onclick="red2()"></button>
+    <button id="greens2" onclick="green2()"></button>
+    <button id="oranges2" onclick="orange2()"></button>
+    <button id="darks2" onclick="black2()"></button>
+    <button id="white2" onclick="white()"></button>
+    </div>
+    <p></p>
+    <div id="fonts">
+        <button id="TimesNewRoman" onclick="TimesNewRoman()"></button>
+        <button id="ArialBlack" onclick="ArialBlack()"></button>
+        <button id="Consolas" onclick="Consolas()"></button>
+        <p><button id="solid" onclick="solid()"></button> <button id="border1" onclick="border1()"></button></p>
+        <p><button id="dashed" onclick="dashed()"></button> <button id="border2" onclick="border2()"></button></p>
+        <p><button id="dotted" onclick="dotted()"></button> <button id="border3"  onclick="border3()"></button></p>
+        <p><button id="borderoff" onclick="offborder()"></button></p>
+        <p><button id="algin" onclick="tekst()">Wyśrodkój tekst</button></p>
+        <p><button id="algin" onclick="new2()">Nowe Pole</button></p>
+        <p><button onclick="window.print('text');" id="p1"><img src="Avosoft-Warm-Toolbar-Print.ico" width="20px" height="15px"></button></p>
+        <p id="tek">Kolor tła <button id="color"></button></p>
+        <p id="tek1" class="tekst1">Kolor Czionki <button id="font1"></button></p>
+        <p id="tek" class="tekst1">Ramka/Border <button id="border"></button></p>
+        <p id="select"></p>
+    </div>
+        <script src="funkcja1.js"></script>
+        <script src="funkcja2.js"></script>
+        <!--<script src="Languepack.js">-->
+            <script src="funkcja3.1.js"></script>
+            <!--Motyw w {Java Script}-->
+            <script src="red.js">
+            <script src="green.js">
+            <script src="black.js">
+            <script src="blackHome.js">
+ <script>
+ //</>//
+//Kod JavaScript jest w odrębnych plikach .js//
+ </script>
+    <p id="java"></p>
+    <div id="tex2" class="tex2">
+        <div class="ale">
+            <p id="text" class="text" data-id="elm1" contenteditable="true" spellcheck="false" style="margin:auto; border:none; background-color:white; height:900px; width:900px;"></p>
+            </div>
+        </div>
+        <div id="tex2" class="tex2">
+        <div class="ale">
+           <p id="new1"></p>
+            </div>
+    </div>
+    <script>
+    function new2(){
+    document.getElementById("new1").innerHTML = "<p id='text' class='text' data-id='elm1' contenteditable='true' spellcheck='false' style='margin:auto; border:none; background-color:white; height:900px; width:900px;'></p>"
+    }
+    </script>
+<script>
+//function color//
+function red(){
+    document.getElementById("text").style.color = "red"
+    document.getElementById("font1").style.backgroundColor = "red"
+}
+function green(){
+document.getElementById("text").style.color = "green"
+document.getElementById("font1").style.backgroundColor = "green"
+}
+function orange(){
+    document.getElementById("text").style.color = "orange"
+    document.getElementById("font1").style.backgroundColor = "orange"
+}
+function black(){
+    document.getElementById("text").style.color = "black"
+    document.getElementById("font1").style.backgroundColor = "black"
+}
+//style button//
+document.getElementById("reds").style.backgroundColor = "Red"
+document.getElementById("greens").style.backgroundColor = "green"
+document.getElementById("oranges").style.backgroundColor = "orange"
+document.getElementById("dark").style.backgroundColor = "black"
+document.getElementById("reds").style.borderRadius = "50%"
+document.getElementById("greens").style.borderRadius = "50%"
+document.getElementById("oranges").style.borderRadius = "50%"
+document.getElementById("dark").style.borderRadius = "50%"
+//function background color//
+function red2(){
+    document.getElementById("text").style.backgroundColor = "Red"
+    document.getElementById("color").style.backgroundColor = "red"
+}
+function green2(){
+    document.getElementById("text").style.backgroundColor = "green"
+    document.getElementById("color").style.backgroundColor = "green"
+}
+function orange2(){
+    document.getElementById("text").style.backgroundColor = "orange"
+    document.getElementById("color").style.backgroundColor = "orange"
+}
+function black2(){
+    document.getElementById("text").style.backgroundColor = "black"
+    document.getElementById("color").style.backgroundColor = "black"
+    document.getElementById("text").style.color = "white"
+}
+//style button background-color//
+document.getElementById("reds2").style.backgroundColor = "Red"
+document.getElementById("greens2").style.backgroundColor = "green"
+document.getElementById("oranges2").style.backgroundColor = "orange"
+document.getElementById("darks2").style.backgroundColor = "black"
+document.getElementById("reds2").style.borderRadius = "50%"
+document.getElementById("greens2").style.borderRadius = "50%"
+document.getElementById("oranges2").style.borderRadius = "50%"
+document.getElementById("darks2").style.borderRadius = "50%"
+function windowInfo(){
+    //Blocked option//
+    var Informacje = windows.open("", "MsgWindow", "width=200,height=100");
+    Informacje.document.write("<p>Nowe Funkcje</p><p>Nowe style</p><p>I wiele więcej</p>");
+    Informacje.style.backgroundColor = "Gray"
+}
+//50 linijka//
+document.getElementById("textcolor").title = "Kolor czcionki"
+//Font face//
+function TimesNewRoman(){
+    document.getElementById("text").style.fontFamily = "Times New Roman"
+    document.getElementById("select").innerText = "Times New Roman"
+    document.getElementById("select").style.fontFamily = "Times New Roman"
+    document.getElementById("select").style.borderColor = "Black"
+}
+document.getElementById("TimesNewRoman").innerText = "Aa"
+document.getElementById("TimesNewRoman").style.fontFamily = "Times New Roman"
+document.getElementById("TimesNewRoman").style.borderRadius = "50%"
+document.getElementById("fonts").style.float = "right"
+document.getElementById("ArialBlack").style.fontFamily = "Arial Black"
+document.getElementById("ArialBlack").innerText = "Aa"
+document.getElementById("ArialBlack").style.borderRadius = "50%"
+function ArialBlack(){
+    document.getElementById("text").style.fontFamily = "Arial Black"
+    document.getElementById("select").innerText = "Arial Black"
+    document.getElementById("select").style.fontFamily = "Arial Black"
+    document.getElementById("select").style.borderColor = "Black"
+}
+function Consolas(){
+    document.getElementById("text").style.fontFamily = "Consolas"
+    document.getElementById("select").innerText = "Consolas"
+    document.getElementById("select").style.fontFamily = "Consolas"
+    document.getElementById("select").style.borderColor = "Black"
+}
+document.getElementById("Consolas").style.fontFamily = "Consolas"
+document.getElementById("Consolas").innerText = "Aa"
+document.getElementById("Consolas").style.borderRadius = "50%"
+document.getElementById("select").style.borderStyle = "Solid"
+document.getElementById("select").style.borderColor = "white"
+document.getElementById("java").style.color = "white"
+
+document.getElementById("p1").style.borderRadius = "50%"
+
+document.getElementById("p1").style.borderRadius = "50%"
+document.getElementById("font1").style.backgroundColor = "black"
+document.getElementById("tek").style.fontFamily = "Calibri"
+document.getElementById("solid").style.borderStyle = "Solid"
+document.getElementById("solid").style.borderRadius = "50%"
+document.getElementById("dashed").style.borderRadius = "50%"
+document.getElementById("dashed").style.borderStyle = "dashed"
+document.getElementById("dotted").style.borderRadius = "50%"
+document.getElementById("dotted").style.borderStyle = "dotted"
+document.getElementById("borderoff").innerHTML = "Wyłacz Ramkę"
+function solid(){
+    document.getElementById("text").style.borderStyle = "solid"
+}
+//textarea id: text//
+function dashed(){
+    document.getElementById("text").style.borderStyle = "dashed"
+}
+//Odstęp//
+function dashed(){
+    document.getElementById("text").style.borderStyle = "dashed"
+}
+//Odstęp//
+function dotted(){
+    document.getElementById("text").style.borderStyle = "dotted"
+}
+//Border style//
+//Solid,Dashed,Dotted//
+function offborder(){
+    document.getElementById("text").style.border = "none"
+}
+//title font color//
+document.getElementById("textcolor").title = "Kolor czcionki"
+document.getElementById("backgroundcolor").title = "Kolor Tła"
+//background-color//
+document.body.style.backgroundColor = "#ABCDEF";
+//padding: 11px;
+//border-style: solid;
+document.getElementById("border1").style.backgroundColor = "red"
+document.getElementById("border2").style.backgroundColor = "blue"
+document.getElementById("border3").style.backgroundColor = "green"
+//function//
+function border1(){
+    document.getElementById("text").style.borderColor = "red"
+    document.getElementById("border").style.backgroundColor = "red"
+}
+function border2(){
+    document.getElementById("text").style.borderColor = "blue"
+    document.getElementById("border").style.backgroundColor = "blue"
+}
+function border3(){
+    document.getElementById("text").style.borderColor = "green"
+    document.getElementById("border").style.backgroundColor = "green"
+}
+document.getElementById("text").style.backgroundColor = "white"
+document.getElementById("text").style.margin = "auto"
+//function//
+function tekst(){
+    document.getElementById("text").style.textAlign = "center"
+  }
+  function white(){
+      document.getElementById("text").style.backgroundColor = "white"
+  }
+  ////
+  document.getElementById("white2").style.borderRadius = "50%"
+document.getElementById("white2").style.borderRadius = "50%"
+document.getElementById("white2").style.backgroundColor = "white"
+</script>
+<style>
+   .tex2{
+        }
+        button{
+            padding: 11px;
+            border-style: solid;
+        }
+        .text{
+            margin: 0px;
+            width: 724px;
+            height: 660px;
+            background-color: white;
+        }
+        .tekst1{
+          font-family: Calibri;
+        }
+        .text{
+border: 0px;
+        }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #920000; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000; 
+}
+
+</style>
+</html>
